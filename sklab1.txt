@@ -1,0 +1,17 @@
+#sk santhosh lab session1
+github registration
+username:sksandy385
+emailaddress:santhoshstr385@gmail.com
+password:sorry its privacy
+create repository
+terminal: mkdir dirname
+          cd dirname
+python idle:
+print("string")
+#to print the string
+a=int(input("enter the value of a"))
+#to convert to integer and to accept the value
+b=int(input("enter the value of b"))
+c=a+b
+#to add integer a and b
+
