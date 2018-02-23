@@ -1,6 +1,6 @@
-a=set={1,2,4,68,38}
+a=set={1,2,4,68,38}      #assings the value for tuple 'a'
 print(a)
-b=set={1,2,4,68,38}
+b=set={1,2,4,68,38}     #assings the value for tuple 'b'
 print(b)
 print(a|b)   #union
 print(a&b)  # intersection
