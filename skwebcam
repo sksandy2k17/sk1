@@ -1,0 +1,3 @@
+import os 
+os.system("fswebcam -f 3 --fps 20 -r 1280*420 sk.jpg")
+print("pic taken")
