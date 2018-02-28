@@ -1,17 +1,36 @@
-a=["rock","paper","scissor"]        #list of 'a' 
-a[0]=='r'=='R'                      
-a[1]=='p'=='P'
-a[2]=='s'=='S'
-T=input("enter your choice:")       #to accept the user choice
-import random                       #to import random package
-r=random.choice(a)                  #to pick random choice from list 'a'
-print("computer's choice:",r)       #to print random choice
-if (r==T):                          #start of else-if loop and checks conditions
-    print("tie")
-elif (r==a[0],T==a[2]):
-    print("computer won")
-elif(r==a[2],T==a[1]):
-    print("computer won")
-elif (r==a[1],T==a[0]):
-    print("computer won")
-else: print("you won")
+from random import randint
+ 
+#create a list of play options
+t = ["Rock", "Paper", "Scissors"]
+ 
+#assign a random play to the computer
+computer = t[randint(0,2)]
+ 
+#set player to False
+player = False
+ 
+while player == False:
+#set player to True
+    player = input("Rock, Paper, Scissors?")
+    if player == computer:
+        print("Tie!")
+    elif player == "Rock":
+        if computer == "Paper":
+            print("You lose!", computer, "covers", player)
+        else:
+            print("You win!", player, "smashes", computer)
+    elif player == "Paper":
+        if computer == "Scissors":
+            print("You lose!", computer, "cut", player)
+        else:
+            print("You win!", player, "covers", computer)
+    elif player == "Scissors":
+        if computer == "Rock":
+            print("You lose...", computer, "smashes", player)
+        else:
+            print("You win!", player, "cut", computer)
+    else:
+        print("That's not a valid play. Check your spelling!")
+    #player was set to True, but we want it to be False so the loop continues
+    player = False
+    computer = t[randint(0,2)]
