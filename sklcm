@@ -1,6 +1,6 @@
-a=int(input("entre the 1st num:"))    
-b=int(input("enter the 2nd num:"))
-while(b!=0):
+a=int(input("entre the 1st num:"))    #to assign value for variable a
+b=int(input("enter the 2nd num:"))    #to assign value for variable b
+while(b!=0):                          #start of while loop with condition
     c=a%b
     a=b
     b=c
