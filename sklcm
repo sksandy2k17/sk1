@@ -1,0 +1,11 @@
+a=int(input("entre the 1st num:"))
+b=int(input("enter the 2nd num:"))
+m=a
+n=b
+while(b!=0):
+    c=a%b
+    a=b
+    b=c
+print("gcd=",a)
+l=(m*n)/a
+print("lcm=",l)
